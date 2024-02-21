@@ -13,10 +13,10 @@
     <header>
         <div class="container">
             <nav>
-                <h1><a href="#">Portfolio</a></h1>
+                <h1><a href="#"><span>My</span>Portfolio</a></h1>
                 <ul>
                     <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
+                    <li><a href="#about">About</a></li>
                     <li><a href="#">Projects</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
@@ -26,7 +26,7 @@
     <div id="particles-js">
     </div>
     <section id="home">
-        <div class="cartao" id>
+        <div class="cartao">
             <div class="cartao-interior">
                 <div class="cartao-lados cartao-lados-frente">
                     <h2>Who is that?</h2>
@@ -49,9 +49,38 @@
         </div>
     </section>
     <section class="about-section" id="about">
-        <div class="container">
-            <h1>About</h1>
-            ASDASDASFSDASD
+        <div class="container" id="container-about">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="/img/cartaoheader.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subTitle">About</h1>
+                    <p class="infoAbout">Me chamo Pedro Henrique Nicchio Kerkoff, entrei na Universidade Vila Velha, também conhecida como UVV, no ano de 2021. Atualmente, estou no 4º período noturno no curso de Ciências da Computação. Ingressei com o foco de estudar CyberSecurity, mas ao passar do tempo, percebi que não era isso que eu realmente queria. Atualmente, venho focando em desenvolvimento FullStack, e desde então, estou correndo atrás de estudar para cada dia aprender mais.</p>
+                    <div class="tabTitles">
+                        <p class="tabLinks linkAtivo" onclick="abrirTab('sk')">Skills</p>
+                        <p class="tabLinks" onclick="abrirTab('xp')">Experiências</p>
+                        <p class="tabLinks" onclick="abrirTab('es')">Ensino</p>
+                    </div>
+                    <div class="tabContents tabAtivo" id="sk">
+                        <ul>
+                            <li><span>Desenvolvimento Web</span><br>Criação de Sites</li>
+                            <li><span>MinIO</span><br>Arquitetura de armazenamento de dados da Amazon</li>
+                            <li><span>C#</span><br>Linguagem de programação C#</li>
+                        </ul>
+                    </div>
+                    <div class="tabContents" id="xp">
+                        <ul>
+                            <li><span>Prodest</span><br>Instituto de Tecnologia da Informação e Comunicação do Estado do Espírito Santo</li>
+                        </ul>
+                    </div>
+                    <div class="tabContents" id="es">
+                        <ul>
+                            <li><span>UVV</span><br>Universidade Vila Velha - 4º Período</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 

@@ -1,7 +1,7 @@
 :root{
     --preto: #000000;
     --branco: #fff;
-    --roxo: #571892;
+    --roxo: #3d1066;
 }
 
 *{
@@ -11,10 +11,9 @@
     box-sizing: border-box;
 }
 body {
-    background-color: #571892;
+    background-color: #34095c;
     color: #fff;
   }
-
 .home-section{
     margin-bottom: 500px;
 }
@@ -36,7 +35,10 @@ header h1 a{
     text-decoration: none;
     font-size: 40px;
 }
-
+header h1 span{
+    color: #3d1066;
+    font-size: 40px;
+}
 nav ul li{
     display: inline-block;
     list-style: none;
@@ -62,7 +64,116 @@ nav ul li a::after{
 nav ul li a:hover::after{
     width: 100%;
 }
+/* ======== About Configuration ========  */
+#about{
+    padding: 80px 0;
+    color: #fff;
+    height: 1296px
+}
 
+.container#container-about{
+    background-color: #34095c;
+    padding-top: 220px;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-col-1{
+    flex-basis: 35%;
+}
+.about-col-1 img{
+    width: 100%;
+    border-radius: 16px;    
+}
+
+.about-col-2{
+    flex-basis: 60%;
+}
+
+p.infoAbout{
+    width: 650px;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.subTitle{
+    font-size: 60px;
+    font-weight: 600;
+    color: var(--branco);
+}
+
+.tabTitles{
+    display: flex;
+    margin: 40px 0 40px;
+}
+
+.tabLinks{
+    margin-right: 50px;
+    font-size: 30px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.tabLinks::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: var(--preto);
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.tabLinks.linkAtivo::after{
+    width: 50%;
+}
+
+.tabContents ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+
+.tabContents ul li span{
+    color: var(--preto);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.tabContents{
+    display: none;
+}
+
+.tabContents.tabAtivo{
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ======== Cartao Configuration ======== */
 .cartao{
     margin: 250px auto 350px; 
     width: 400px;
@@ -167,7 +278,7 @@ nav ul li a:hover::after{
     font-size: 18px;
     line-height: 1.5;
 }
-
+/* ================================ */
 
 
 /* Particles Configuration */
@@ -187,4 +298,4 @@ canvas {
     background-repeat: no-repeat;
     background-position: 50% 50%;
 }
-  
+/* ================================ */
