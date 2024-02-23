@@ -15,15 +15,21 @@
         <div class="container">
             <nav>
                 <h1><a href="#"><span>My</span>Portfolio</a></h1>
-                <ul>
+                <ul id="sideMenu">
                     <li><a href="#">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#">Projects</a></li>
                     <li><a href="#">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
                 </ul>
+                <i class="fa-solid fa-bars" onclick="openMenu()"></i>
             </nav>
         </div>
     </header>
+    <div class="header-text">
+        <p>Desenvolvedor FullStack junior</p>
+        <h1>Olá, a seguir você ira conhecer um pouco mais sobre mim. Me chamo <span>Pedro</span>, fique a vontade.</h1>
+    </div>
     <div id="particles-js">
     </div>
     <section id="home">
@@ -49,6 +55,7 @@
             </div>
         </div>
     </section>
+
     <!-- about -->
     <section class="about-section" id="about">
         <div class="container" id="container-about">
@@ -58,7 +65,7 @@
                 </div>
                 <div class="about-col-2">
                     <h1 class="subTitle">About</h1>
-                    <p class="infoAbout">Me chamo Pedro Henrique Nicchio Kerkoff, entrei na Universidade Vila Velha, também conhecida como UVV, no ano de 2021. Atualmente, estou no 4º período noturno no curso de Ciências da Computação. Ingressei com o foco de estudar CyberSecurity, mas ao passar do tempo, percebi que não era isso que eu realmente queria. Atualmente, venho focando em desenvolvimento FullStack, e desde então, estou correndo atrás de estudar para cada dia aprender mais.</p>
+                    <p class="infoAbout">Me chamo Pedro Henrique Nicchio Kerkoff, entrei na Universidade Vila Velha, também conhecida como UVV, no ano de 2022. Atualmente, estou no 4º período noturno no curso de Ciências da Computação. Ingressei com o foco de estudar CyberSecurity, mas ao passar do tempo, percebi que não era isso que eu realmente queria. Atualmente, venho focando em desenvolvimento FullStack, e desde então, estou correndo atrás de estudar para cada dia aprender mais.</p>
                     <div class="tabTitles">
                         <p class="tabLinks linkAtivo" onclick="abrirTab('sk')">Skills</p>
                         <p class="tabLinks" onclick="abrirTab('xp')">Experiências</p>
@@ -117,6 +124,35 @@
                 </div>
             </div>
             <a href="#" class="btn">Clique para mais</a>
+        </div>
+    </section>
+    <!-- contac -->
+    <section id="contact">
+        <div class="container" id="container-contact">
+            <div class="row">
+                <div class="contact-left">    
+                    <h1 class="subTitle">Fale comigo</h1>
+                    <p><i class="fa-solid fa-inbox"></i> pedrokhenrique2003@gmail.com</p>                
+                    <p><i class="fa-solid fa-phone"></i> +55 (27)98881-1545</p>                
+                     <div class="redesSociais">
+                        <a id="linkedin" href="https://www.linkedin.com/in/pedro-henrique-nicchio-kerkoff-10a74221a/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a id="twitter" href="https://twitter.com/PeedruuKerkoff"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a id="instagram" href="https://www.instagram.com/pedro.kerkoff/"><i class="fa-brands fa-instagram"></i></a>
+                     </div>
+                     <a href="" download class="btn btn2">Baixar CV</a>               
+                </div>
+                <div class="contact-right"> 
+                    <form>
+                        <input type="text" name="Name" placeholder="Seu Nome" required>
+                        <input type="email" name="emaik" placeholder="Seu Gmail" required>
+                        <textarea name="Menssagem" placeholder="Sua Menssagem" rows="6"></textarea>
+                        <button type="submit" class="btn btn2">Enviar</button>
+                    </form>                   
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            
         </div>
     </section>
 

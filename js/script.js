@@ -18,5 +18,16 @@ function abrirTab(value){
     document.getElementById(value).classList.add("tabAtivo");
 }
 
+//SmallConfig 
+var sideMenu = document.getElementById("sideMenu");
+
+function openMenu(){
+    sideMenu.style.right = "0";
+}
+
+function closeMenu(){
+    sideMenu.style.right = "-150px";
+}
+
 
 console.log("Teste")
