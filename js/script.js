@@ -29,5 +29,29 @@ function closeMenu(){
     sideMenu.style.right = "-150px";
 }
 
+//Send form
+const handleSubmit = (x) => {
+    x.preventDefault();
+
+    const form = document.forms['formContato']
+    const name = document.querySelector('input[name=Name]').value 
+    const email = document.querySelector('input[name=Email]').value
+    const menssagem = document.querySelector('textarea[name=Menssage]').value
+
+    const nameAfter = document.querySelector('input[name=Name]').value = ""
+    const emailAfter = document.querySelector('input[name=Email]').value = ""
+    const menssagemAfter = document.querySelector('textarea[name=Menssage]').value = ""
+
+    fetch('https://api.sheetmonkey.io/form/bsgSVsutVY8xoDy7QC1S29', {
+        method: 'post',
+        headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({Name: name, Email: email, Menssage: menssagem}),
+    })
+}
+
+document.querySelector('form').addEventListener('submit', handleSubmit);
 
 console.log("Teste")
